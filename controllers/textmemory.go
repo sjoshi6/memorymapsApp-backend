@@ -13,7 +13,7 @@ import (
 type TextMemory struct {
 	Text      string `json:"text"`
 	Latitude  string `json:"latitude"`
-	Longitude string `json:"longtitude"`
+	Longitude string `json:"longitude"`
 }
 
 // TextMemoryResponse : Used to send individual text memories
