@@ -14,7 +14,7 @@ var textmemoryroutes = Routes{
 		Name:        "Create Memory",
 		Method:      "POST",
 		Pattern:     "/v1/textmemory",
-		HandlerFunc: t.Create,
+		HandlerFunc: CORSHandler(t.Create),
 	},
 }
 
