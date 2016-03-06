@@ -51,7 +51,7 @@ func CreateTablesIfNotExists() error {
 	// Creating the tables
 	// TextMemory Table
 	_, err = db.Exec(
-		"CREATE TABLE IF NOT EXISTS TextMemory(ID SERIAL PRIMARY KEY, TextMem VARCHAR(1000) NOT NULL, CreationTime timestamp default current_timestamp);")
+		"CREATE TABLE IF NOT EXISTS TextMemory(ID SERIAL PRIMARY KEY, TextMem VARCHAR(1000) NOT NULL, Latitude double precision, Longitude double precision, CreationTime timestamp default current_timestamp);")
 
 	if err != nil {
 		log.Println(err)
