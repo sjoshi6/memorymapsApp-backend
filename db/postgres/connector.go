@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"peer2peer/config"
+	"memorymaps-backend/config"
 
 	// Ued for connecting to postgres server
 	_ "github.com/lib/pq"

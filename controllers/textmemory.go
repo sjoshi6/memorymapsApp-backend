@@ -3,9 +3,9 @@ package controllers
 import (
 	"encoding/json"
 	"log"
+	"memorymaps-backend/config"
+	"memorymaps-backend/db/postgres"
 	"net/http"
-	"peer2peer/config"
-	"peer2peer/db/postgres"
 )
 
 // TextMemory : Used to refer to text memories

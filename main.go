@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
+	"memorymaps-backend/db/postgres"
 	"memorymaps-backend/routers"
-	"peer2peer/db/postgres"
 	"runtime"
 
 	"github.com/codegangsta/negroni"
