@@ -17,10 +17,16 @@ var textmemoryroutes = Routes{
 		HandlerFunc: CORSHandler(t.Create),
 	},
 	Route{
-		"Options Handler",
-		"OPTIONS",
-		"/v1/{rest:[a-zA-Z0-9]+}",
-		OptionsHandler,
+		Name:        "Get All Text Memories",
+		Method:      "GET",
+		Pattern:     "/v1/textmemories",
+		HandlerFunc: CORSHandler(t.GetAll),
+	},
+	Route{
+		Name:        "Options Handler",
+		Method:      "OPTIONS",
+		Pattern:     "/v1/{rest:[a-zA-Z0-9]+}",
+		HandlerFunc: OptionsHandler,
 	},
 }
 
